@@ -10,12 +10,6 @@ import { insertAuthorsData } from "../models/authorModel/insertData";
 import { insertLoansData } from "../models/loanModel/insertData";
 import { insertMembersData } from "../models/memberModel/insertData";
 import { insertReservationData } from "../models/resevationModel/insertData";
-// import { insertMemberData } from "../models/memberModel/insertData";
-// const sequelize = new Sequelize("school_db", "postgres", "1405", {
-//   host: "localhost",
-//   dialect: "postgres",
-//   port: 5433,
-// });
 
 const Connection = async () => {
   try {
