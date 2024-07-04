@@ -1,43 +1,46 @@
-// const sequelize = require("./index.js");
-import { Sequelize,Model,DataTypes } from "sequelize";
-import { Member } from "../memberModel/member";
-import { Book } from "../bookModel/book";
+import { title } from "process";
+import { sequelize } from "../../db_connection";
+import { Loan } from "./loan";
+import { DataTypes } from "sequelize";
 
-import {sequelize} from '../../db_connection/config'
-export const Loan = sequelize.define(
-  "Loan",
+const loansData = [
   {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-      allowNull: false,
-    }, 
-    book_id:{
-      type: DataTypes.INTEGER,
-      references: {
-          model: Book,
-          key: 'id'
-      }
-    },
-    member_id: {
-      type: DataTypes.INTEGER,
-      references: {
-          model: Member,
-          key: 'id'
-      }
-    },
-    loan_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    due_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
+    id: 1,
+    book_id:2,
+    member_id: 2,
+    loan_date: new Date(),
+    due_date: new Date(new Date().setDate(new Date().getDate() + 14)),
   },
   {
-    timestamps: false,
-    tableName:'Loan'
+    id: 2,
+    book_id:1,
+    member_id: 3,
+    loan_date: new Date(),
+    due_date: new Date(new Date().setDate(new Date().getDate() + 14)),
   },
-);
+  {
+    id: 3,
+    book_id:4,
+    member_id: 4,
+    loan_date: new Date(),
+    due_date: new Date(new Date().setDate(new Date().getDate() + 14)),
+  },
+  {
+    id: 4,
+    book_id:3,
+    member_id: 5,
+    loan_date: new Date(),
+    due_date: new Date(new Date().setDate(new Date().getDate() + 14)),
+  },
+  {
+    id: 5,
+    book_id:5,
+    member_id: 1,
+    loan_date: new Date(),
+    due_date: new Date(new Date().setDate(new Date().getDate() + 14)),
+  },
+];
+
+export const insertLoansData = async () => {
+  const loans = await Loan.bulkCreate(loansData);
+};
