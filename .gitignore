@@ -8,3 +8,8 @@ UserDetails.js
 reservation.js
 insertData.js
 config.js
+author.repository.js
+book.repository.js
+loan.repository.js
+member.repository.js
+reservation.repository.js
