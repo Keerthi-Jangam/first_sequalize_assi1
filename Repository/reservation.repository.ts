@@ -7,7 +7,7 @@ export const insertReservationData = async () => {
     console.log("insert successfully");
   };
   
-  reservationRouter.get('/', async (req, res) => {
+  reservationRouter.get('/', async (req:Request, res:Response) => {
     try {
         // Fetch all reservations include books
         const reservations = await Reservation.findAll();
