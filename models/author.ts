@@ -1,6 +1,6 @@
 //import sequelize from "../db_connection";
 import { Sequelize,DataTypes } from "sequelize";
-import {sequelize} from '../../db_connection/config'
+import {sequelize} from '../db_connection/config'
 export const Author = sequelize.define(
     "Author",
     {

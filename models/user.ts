@@ -1,5 +1,3 @@
-
-
 const sequelize = require('./index.js');
 import { DataTypes } from "sequelize";
 export const userModel = (sequelize:any) => {

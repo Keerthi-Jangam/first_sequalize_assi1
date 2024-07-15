@@ -4,7 +4,7 @@ book.js
 loan.js
 member.js
 author.js
-UserDetails.js
+user.js
 reservation.js
 insertData.js
 config.js
@@ -13,3 +13,5 @@ book.repository.js
 loan.repository.js
 member.repository.js
 reservation.repository.js
+loans.query.js
+books.query.js
