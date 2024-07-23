@@ -97,38 +97,38 @@ export const Data = {
   ],
   memberData: [
     {
-      name: "soumya",
+      name: "keerthi",
       address: "add1",
       phone_number: "12345678902",
-      email: "soumya@example.com",
+      email: "keerthi@example.com",
     },
 
     {
-      name: "sakshii",
+      name: "junnu",
       address: "add2",
       phone_number: "09876543215",
-      email: "sakshi@example.com",
+      email: "junnu@example.com",
     },
 
     {
-      name: "Doe",
+      name: "naveen",
       address: "add3",
       phone_number: "12345673290",
-      email: "doe@example.com",
+      email: "naveen@example.com",
     },
 
     {
-      name: "suith",
+      name: "advaith",
       address: "add4",
       phone_number: "098765432121",
-      email: "suith@example.com",
+      email: "advaith@example.com",
     },
 
     {
-      name: "kiya",
+      name: "sammu",
       address: "add5",
       phone_number: "57597294758",
-      email: "kiya@example.com",
+      email: "sammu@example.com",
     },
   ],
   reservationData: [
